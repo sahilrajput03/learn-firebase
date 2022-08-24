@@ -122,3 +122,9 @@ On user logout we can simply call the unsubscribe(see above image to know what i
 Compount queryies:
 
 ![image](https://user-images.githubusercontent.com/31458531/186426440-d6a227b4-d663-4861-90f0-15e1c0a00f96.png)
+
+and for above query to work make sure you make the composite index (this is helpful in scaling quickly):
+
+![image](https://user-images.githubusercontent.com/31458531/186426686-ca30a571-5cc5-443c-a6ad-e72d26f08318.png)
+
+![image](https://user-images.githubusercontent.com/31458531/186426779-fe1568fd-ef46-4861-a914-452b914954ed.png)
