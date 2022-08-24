@@ -20,7 +20,6 @@ firebase emulators:start --only firestore
 
 # Connect your existing firebase project to use firebase emulator's firestore (or other other services)
 
-
 - Connect your app to the Cloud Firestore Emulator: [Click here - Official Docs](https://firebase.google.com/docs/emulator-suite/connect_firestore#web-version-8)
 
 In my totel project I am connecting to emulator's firestore and auth like that:
@@ -43,6 +42,9 @@ In my totel project I am connecting to emulator's firestore and auth like that:
 
 - Connect your app to the Authentication Emulator: [Click here - Official Docs](https://firebase.google.com/docs/emulator-suite/connect_auth)
 
+## Amazing usage agnostics of using firebase auth via **firebase emulator**
+
+![image](https://user-images.githubusercontent.com/31458531/186378967-cc6bc9ec-ba70-4391-a505-9a26cfab69b0.png)
 
 ## Cli help text
 
