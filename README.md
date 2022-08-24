@@ -23,17 +23,20 @@ firebase emulators:start --only firestore
 
 - Connect your app to the Cloud Firestore Emulator: [Click here - Official Docs](https://firebase.google.com/docs/emulator-suite/connect_firestore#web-version-8)
 
-In my totel project I am connecting to emulator's firestore like that:
+In my totel project I am connecting to emulator's firestore and auth like that:
 
 	```js
+	const auth = firebase.auth();
 	const firestore = firebase.firestore();
 
-	// Connecting app to "Cloud Firebase Emulator"
+	// ENABLE DISABLE FOR USING EMULATOR ON LOCALHOST
 	const enableEmulator_onLocalhost = 1;
+	// Connecting app to "CLOUD FIREBASE EMULATOR"
 	const isBrowser = typeof window !== 'undefined';
 	if (enableEmulator_onLocalhost && isBrowser) {
 		if (window.location.hostname === 'localhost') {
-			firestore.useEmulator('localhost', 8080);
+			firestore.useEmulator('localhost', 8080); // https://firebase.google.com/docs/emulator-suite/connect_firestore#web-version-8 // ~sahil
+			auth.useEmulator('http://localhost:9099');
 		}
 	}
 	```
