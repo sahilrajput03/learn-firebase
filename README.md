@@ -136,3 +136,7 @@ and for above query to work make sure you make the composite index (this is help
 ![image](https://user-images.githubusercontent.com/31458531/186433624-9f1fd975-122a-4d5e-aad7-c7c24ed1a946.png)
 
 ![image](https://user-images.githubusercontent.com/31458531/186433712-f2587f5b-a278-441c-b940-d6f5999fd84a.png)
+
+## todo: checkout firebase extensions
+
+![image](https://user-images.githubusercontent.com/31458531/186433843-55073e11-127a-4b22-a791-44eb5ea19b68.png)
