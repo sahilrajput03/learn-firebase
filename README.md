@@ -93,5 +93,14 @@ We can query the data like that:
 ## sample photoURL
 
 imageURL 96x96 :
-- [Artistic Lady](https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png) 
-- Exported from figma maually: ![image 2](https://user-images.githubusercontent.com/31458531/186395515-ca518a39-c12e-48b3-9ce6-d3529a577038.png)
+- Artistic Lady:
+
+![image](https://user-images.githubusercontent.com/31458531/186396210-d2896738-b4f7-4f61-bda4-a1d56924a460.png)
+
+- Exported from figma maually:
+
+![image 2](https://user-images.githubusercontent.com/31458531/186395515-ca518a39-c12e-48b3-9ce6-d3529a577038.png)
+
+- My own:
+
+![image](https://user-images.githubusercontent.com/31458531/186396018-4ac4a80f-aa85-4179-8a28-1a9b3707bf19.png)
