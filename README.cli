@@ -1,0 +1,167 @@
+array@arch-os app1$ firebase init
+
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/array/test/cheffy-interview/learn-firebase/app1
+
+? Which Firebase features do you want to set up for this directory? Press Space to select feat
+ures, then Enter to confirm your choices. Realtime Database: Configure a security rules file f
+or Realtime Database and (optionally) provision default instance, Firestore: Configure securit
+y rules and indexes files for Firestore, Functions: Configure a Cloud Functions directory and
+its files, Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action
+ deploys, Hosting: Set up GitHub Action deploys, Storage: Configure a security rules file for
+Cloud Storage, Emulators: Set up local emulators for Firebase products, Remote Config: Configu
+re a template file for Remote Config
+
+=== Project Setup
+
+First, let's associate this project directory with a Firebase project.
+You can create multiple project aliases by running firebase use --add,
+but for now we'll just set up a default project.
+
+? Please select an option: Use an existing project
+? Select a default Firebase project for this directory: for-next-auth-example-project (for-nex
+t-auth-example-project)
+i  Using project for-next-auth-example-project (for-next-auth-example-project)
+
+=== Database Setup
+i  database: ensuring required API firebasedatabase.googleapis.com is enabled...
+⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now...
+✔  database: required API firebasedatabase.googleapis.com is enabled
+
+? It seems like you haven’t initialized Realtime Database in your project yet. Do you want to
+set it up? Yes
+? Please choose the location for your default Realtime Database instance: us-central1
+✔ Creating your default Realtime Database instance: for-next-auth-example-project-default-rtdb
+
+Firebase Realtime Database Security Rules allow you to define how your data should be
+structured and when your data can be read from and written to.
+
+? What file should be used for Realtime Database Security Rules? database.rules.json
+✔  Database Rules for for-next-auth-example-project-default-rtdb have been written to database.rules.json.
+Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+firebase deploy.
+
+=== Firestore Setup
+
+Firestore Security Rules allow you to define how and when to allow
+requests. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore Rules? firestore.rules
+
+Firestore indexes allow you to perform complex queries while
+maintaining performance that scales with the size of the result
+set. You can keep index definitions in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Firestore indexes? firestore.indexes.json
+
+=== Functions Setup
+
+A functions directory will be created in your project with sample code
+pre-configured. Functions can be deployed with firebase deploy.
+
+? What language would you like to use to write Cloud Functions? JavaScript
+? Do you want to use ESLint to catch probable bugs and enforce style? No
+✔  Wrote functions/package.json
+✔  Wrote functions/index.js
+✔  Wrote functions/.gitignore
+? Do you want to install dependencies with npm now? Yes
+
+added 234 packages, and audited 235 packages in 17s
+
+15 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+=== Hosting Setup
+
+Your public directory is the folder (relative to your project directory) that
+will contain Hosting assets to be uploaded with firebase deploy. If you
+have a build process for your assets, use your build's output directory.
+
+? What do you want to use as your public directory? public
+? Configure as a single-page app (rewrite all urls to /index.html)? Yes
+? Set up automatic builds and deploys with GitHub? Yes
+✔  Wrote public/index.html
+
+i  Didn't detect a .git folder. Assuming /home/array/test/cheffy-interview/learn-firebase/app1 is the project root.
+i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store.
+
+Visit this URL on this device to log in:
+https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=905242771&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+
+Waiting for authentication...
+
+✔  Success! Logged into GitHub as sahilrajput03
+
+? For which GitHub repository would you like to set up a GitHub workflow? (format: user/reposi
+tory) sahilrajput03/learn-firebase
+
+✔  Created service account github-action-528320898 with Firebase Hosting admin permissions.
+✔  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_FOR_NEXT_AUTH_EXAMPLE_PROJECT.
+i  You can manage your secrets at https://github.com/sahilrajput03/learn-firebase/settings/secrets.
+
+? Set up the workflow to run a build script before every deploy? Yes
+? What script should be run before every deploy? npm ci && npm run build
+
+✔  Created workflow file /home/array/test/cheffy-interview/learn-firebase/app1/.github/workflows/firebase-hosting-pull-request.yml
+? Set up automatic deployment to your site's live channel when a PR is merged? Yes
+? What is the name of the GitHub branch associated with your site's live channel? main
+
+✔  Created workflow file /home/array/test/cheffy-interview/learn-firebase/app1/.github/workflows/firebase-hosting-merge.yml
+
+i  Action required: Visit this URL to revoke authorization for the Firebase CLI GitHub OAuth App:
+https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+i  Action required: Push any new workflow file(s) to your repo
+
+=== Storage Setup
+
+Firebase Storage Security Rules allow you to define how and when to allow
+uploads and downloads. You can keep these rules in your project directory
+and publish them with firebase deploy.
+
+? What file should be used for Storage Rules? storage.rules
+✔  Wrote storage.rules
+
+=== Emulators Setup
+? Which Firebase emulators do you want to set up? Press Space to select emulators, then Enter
+to confirm your choices. Authentication Emulator, Functions Emulator, Firestore Emulator, Data
+base Emulator, Hosting Emulator, Pub/Sub Emulator, Storage Emulator, Eventarc Emulator
+? Which port do you want to use for the auth emulator? 9099
+? Which port do you want to use for the functions emulator? 5001
+? Which port do you want to use for the firestore emulator? 8080
+? Which port do you want to use for the database emulator? 9000
+? Which port do you want to use for the hosting emulator? 5000
+? Which port do you want to use for the pubsub emulator? 8085
+? Which port do you want to use for the storage emulator? 9199
+? Which port do you want to use for the eventarc emulator? 9299
+? Would you like to enable the Emulator UI? Yes
+? Which port do you want to use for the Emulator UI (leave empty to use any available port)? 8081
+? Would you like to download the emulators now? Yes
+i  database: downloading firebase-database-emulator-v4.8.0.jar...
+Progress: ====================================================================> (100% of 34MB)
+i  pubsub: downloading pubsub-emulator-0.1.0.zip...
+Progress: ====================================================================> (100% of 37MB)
+i  storage: downloading cloud-storage-rules-runtime-v1.0.2.jar...
+Progress: ====================================================================> (100% of 36MB)
+i  ui: downloading ui-v1.9.0.zip...
+
+=== Remoteconfig Setup
+Progress: =====================================================================> (100% of 4MB)
+? What file should be used for your Remote Config template? remoteconfig.template.json
+
+i  Writing configuration info to firebase.json...
+i  Writing project information to .firebaserc...
+i  Writing gitignore file to .gitignore...
+
+✔  Firebase initialization complete!
+array@arch-os app1$
