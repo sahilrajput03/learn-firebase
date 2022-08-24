@@ -44,6 +44,8 @@ In my totel project I am connecting to emulator's firestore and auth like that:
 
 ## Realtime Db vs. Firestore db
 
+![image](https://user-images.githubusercontent.com/31458531/186386563-b7f671f5-58ee-42f3-bc88-517ee1c3b15a.png)
+
 ## Amazing usage agnostics of using firebase auth via **firebase emulator**
 
 ![image](https://user-images.githubusercontent.com/31458531/186378967-cc6bc9ec-ba70-4391-a505-9a26cfab69b0.png)
