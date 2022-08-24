@@ -4,6 +4,11 @@ TODO: Official Unit Testing Guide | Firestore Tools: [Click here](https://fireba
 
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
+# decoding firestore database rules
+
+- [great stackoverflow answer](https://stackoverflow.com/a/17984468/10012446) [his gist@withRecentUpdates](https://gist.github.com/katowulf/4741111)
+- Use [diff checker to diff above answer vs. his gist](https://www.diffchecker.com/diff)
+
 # Using firebase emulator for locally running all firebase utilities
 
 ```bash
