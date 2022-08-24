@@ -118,3 +118,7 @@ but instead if we wanted to read once we could have done:
 On user logout we can simply call the unsubscribe(see above image to know what is unsubscript) like this:
 
 ![image](https://user-images.githubusercontent.com/31458531/186426203-b241acc5-a88c-4834-9b0f-983bea668f8c.png)
+
+Compount queryies:
+
+![image](https://user-images.githubusercontent.com/31458531/186426440-d6a227b4-d663-4861-90f0-15e1c0a00f96.png)
