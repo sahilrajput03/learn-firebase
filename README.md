@@ -114,3 +114,7 @@ I.e., using `onSnapshot` method
 but instead if we wanted to read once we could have done:
 
 ![image](https://user-images.githubusercontent.com/31458531/186425617-8c42ea7b-2d76-4182-aba7-67ef40db81f9.png)
+
+On user logout we can simply call the unsubscribe(see above image to know what is unsubscript) like this:
+
+![image](https://user-images.githubusercontent.com/31458531/186426203-b241acc5-a88c-4834-9b0f-983bea668f8c.png)
