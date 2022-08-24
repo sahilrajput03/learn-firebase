@@ -1,6 +1,6 @@
 # Readme
 
-TODO: Unit Testing Guide | Firestore Tools: https://firebase.google.com/docs/rules/unit-tests
+TODO: Official Unit Testing Guide | Firestore Tools: [Click here](https://firebase.google.com/docs/rules/unit-tests)
 
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
