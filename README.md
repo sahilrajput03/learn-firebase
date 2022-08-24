@@ -92,4 +92,6 @@ We can query the data like that:
 
 ## sample photoURL
 
-96x96 imageURL: https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png
+imageURL 96x96 :
+- [Artistic Lady](https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png) 
+- Exported from figma maually: ![image 2](https://user-images.githubusercontent.com/31458531/186395515-ca518a39-c12e-48b3-9ce6-d3529a577038.png)
