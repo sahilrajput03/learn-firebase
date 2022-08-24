@@ -89,6 +89,4 @@ We can query the data like that:
 
 ## sample photoURL
 
-![image](https://user-images.githubusercontent.com/31458531/186393423-4f3f2897-940d-4b6b-9466-781852ec87b3.png)
-
-![image](https://user-images.githubusercontent.com/31458531/186393488-7642f091-0a7a-42a6-89eb-531058840e1e.png)
+96x96 imageURL: https://icons.iconarchive.com/icons/raindropmemory/in-spirited-we-love/128/Photo-icon.png
