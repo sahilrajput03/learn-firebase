@@ -132,3 +132,5 @@ and for above query to work make sure you make the composite index (this is help
 ## Firebase has ton of builin services to support with machine learning activities
 
 ![image](https://user-images.githubusercontent.com/31458531/186433459-2da4a4fd-c062-4ae1-8541-a21027c17fde.png)
+
+![image](https://user-images.githubusercontent.com/31458531/186433624-9f1fd975-122a-4d5e-aad7-c7c24ed1a946.png)
