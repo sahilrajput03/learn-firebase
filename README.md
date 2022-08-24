@@ -82,6 +82,9 @@ We can query the data like that:
 
 ![image](https://user-images.githubusercontent.com/31458531/186390870-a0b11463-51c4-4d90-892e-81547605bc84.png)
 
+- Are you viewing all documents from the collection ?
+
+![image](https://user-images.githubusercontent.com/31458531/186394128-81153182-6c46-481d-96d9-3df5b8a47cbb.png)
 
 - Use that button to clear the search query:
 
