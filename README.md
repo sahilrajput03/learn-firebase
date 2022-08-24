@@ -128,3 +128,7 @@ and for above query to work make sure you make the composite index (this is help
 ![image](https://user-images.githubusercontent.com/31458531/186426686-ca30a571-5cc5-443c-a6ad-e72d26f08318.png)
 
 ![image](https://user-images.githubusercontent.com/31458531/186426779-fe1568fd-ef46-4861-a914-452b914954ed.png)
+
+## Firebase has ton of builin services to support with machine learning activities
+
+![image](https://user-images.githubusercontent.com/31458531/186433459-2da4a4fd-c062-4ae1-8541-a21027c17fde.png)
