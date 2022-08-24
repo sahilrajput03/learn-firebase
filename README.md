@@ -81,3 +81,8 @@ We can query the data like that:
 ![image](https://user-images.githubusercontent.com/31458531/186390632-dc6d70ea-8c3e-43e4-a04b-79042efd4b42.png)
 
 ![image](https://user-images.githubusercontent.com/31458531/186390870-a0b11463-51c4-4d90-892e-81547605bc84.png)
+
+
+- Use that button to clear the search query:
+
+![image](https://user-images.githubusercontent.com/31458531/186391121-c572b2d3-791a-4bf8-94da-879e7012747d.png)
