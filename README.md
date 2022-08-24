@@ -9,6 +9,8 @@ Please refer `README.cli` for referencing project setup details. Firebase seems 
 - For making chat application: [great stackoverflow answer](https://stackoverflow.com/a/17984468/10012446) [his gist@withRecentUpdates](https://gist.github.com/katowulf/4741111)
 - Use [diff checker to diff above answer vs. his gist](https://www.diffchecker.com/diff)
 
+[source of below screenshot](https://www.youtube.com/watch?v=qLrDWBKTUZo)
+
 ![image](https://user-images.githubusercontent.com/31458531/186439774-15ed3aa5-6b19-44a0-b40d-77f224e73d92.png)
 
 
