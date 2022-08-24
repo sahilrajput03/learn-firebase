@@ -4,7 +4,6 @@ TODO: Official Unit Testing Guide | Firestore Tools: [Click here](https://fireba
 
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
-
 # Using firebase emulator for locally running all firebase utilities
 
 ```bash
@@ -104,3 +103,14 @@ imageURL 96x96 :
 - My own:
 
 ![image](https://user-images.githubusercontent.com/31458531/186396018-4ac4a80f-aa85-4179-8a28-1a9b3707bf19.png)
+
+
+## This is how we live update of the data from firestore
+
+I.e., using `onSnapshot` method
+
+![image](https://user-images.githubusercontent.com/31458531/186425414-87237421-0f91-4335-9350-b56d5e425e69.png)
+
+but instead if we wanted to read once we could have done:
+
+![image](https://user-images.githubusercontent.com/31458531/186425617-8c42ea7b-2d76-4182-aba7-67ef40db81f9.png)
