@@ -1,5 +1,7 @@
 # Readme
 
+TODO: IN depth for testing: https://firebase.google.com/docs/rules/unit-tests
+
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
 
@@ -18,20 +20,26 @@ firebase emulators:start --only firestore
 
 # Connect your existing firebase project to use firebase emulator's firestore (or other other services)
 
-In my totel project I am using it like:
 
-```js
-const firestore = firebase.firestore();
+- Connect your app to the Cloud Firestore Emulator: [Click here - Official Docs](https://firebase.google.com/docs/emulator-suite/connect_firestore#web-version-8)
 
-// Connecting app to "Cloud Firebase Emulator"
-const enableEmulator_onLocalhost = 1;
-const isBrowser = typeof window !== 'undefined';
-if (enableEmulator_onLocalhost && isBrowser) {
-	if (window.location.hostname === 'localhost') {
-		firestore.useEmulator('localhost', 8080); // https://firebase.google.com/docs/emulator-suite/connect_firestore#web-version-8 // ~sahil
+In my totel project I am connecting to emulator's firestore like that:
+
+	```js
+	const firestore = firebase.firestore();
+
+	// Connecting app to "Cloud Firebase Emulator"
+	const enableEmulator_onLocalhost = 1;
+	const isBrowser = typeof window !== 'undefined';
+	if (enableEmulator_onLocalhost && isBrowser) {
+		if (window.location.hostname === 'localhost') {
+			firestore.useEmulator('localhost', 8080);
+		}
 	}
-}
-```
+	```
+
+- Connect your app to the Authentication Emulator: [Click here - Official Docs](https://firebase.google.com/docs/emulator-suite/connect_auth)
+
 
 ## Cli help text
 
