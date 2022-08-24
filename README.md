@@ -72,3 +72,10 @@ firebase emulators:start -h
 #                               the location of --import [dir] is used
 #   -h, --help                  output usage information
 ```
+
+
+## Learn Firestore
+
+We can query the data like that:
+
+![image](https://user-images.githubusercontent.com/31458531/186390632-dc6d70ea-8c3e-43e4-a04b-79042efd4b42.png)
