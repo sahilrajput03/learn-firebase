@@ -8,7 +8,7 @@ Please refer `README.cli` for referencing project setup details. Firebase seems 
 
 - You can make use this rule to define array's inside value driven authorization: yikes!! **Gonna use this to implement authorization in the chat app in totelApp by having array field `relatedTo` in `messages` collection and with each message I will store the user's uid and the target's uid in that array as values, thus:**
 	- I will define rule for each user's access to chat messages only if they have their respective uid's in the `relatedTo`'s array values. Thus providing security to chat messages.
-	- I would be able to fetch only the required messages by the user (Prevent receiving unrelated messages to the user i.e, in messages where user is neither sender nor receiver. Thus achieving performance.
+	- I would be able to fetch only the required messages by the user (Prevent receiving unrelated messages to the user i.e, in messages where user is neither sender nor receiver. Thus achieving performance. Source: [Firestore Database Security - Docs](https://firebase.google.com/docs/reference/security/database)
 
 ![image](https://user-images.githubusercontent.com/31458531/186590903-d1b2e9ad-983f-4a98-9d39-7603e04c3a20.png)
 
