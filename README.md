@@ -4,6 +4,11 @@ TODO: Official Unit Testing Guide | Firestore Tools: [Click here](https://fireba
 
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
+# Firestore Fetching Data Docs
+
+- [Perform simple and compound queries in Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/queries#array_membership)
+- add more urls here..
+
 # decoding firestore database rules
 
 - You can make use this rule to define array's inside value driven authorization: yikes!! **Gonna use this to implement authorization in the chat app in totelApp by having array field `relatedTo` in `messages` collection and with each message I will store the user's uid and the target's uid in that array as values, thus:**
