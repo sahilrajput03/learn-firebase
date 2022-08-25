@@ -6,6 +6,12 @@ Please refer `README.cli` for referencing project setup details. Firebase seems 
 
 # decoding firestore database rules
 
+- You can make use this rule to define array's inside value driven authorization: yikes!! **Gonna use this to implement authorization in the chat app in totelApp by having array field `relatedTo` in `messages` collection and with each message I will store the user's uid and the target's uid in that array as values, thus:**
+	- I will define rule for each user's access to chat messages only if they have their respective uid's in the `relatedTo`'s array values. Thus providing security to chat messages.
+	- I would be able to fetch only the required messages by the user (Prevent receiving unrelated messages to the user i.e, in messages where user is neither sender nor receiver. Thus achieving performance.
+
+![image](https://user-images.githubusercontent.com/31458531/186590903-d1b2e9ad-983f-4a98-9d39-7603e04c3a20.png)
+
 - For making chat application: [great stackoverflow answer](https://stackoverflow.com/a/17984468/10012446) [his gist@withRecentUpdates](https://gist.github.com/katowulf/4741111)
 - Use [diff checker to diff above answer vs. his gist](https://www.diffchecker.com/diff)
 - Search for firebase database rules tutorial/crash course: [Click here](https://www.youtube.com/results?search_query=firebase+database+rules)
