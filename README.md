@@ -9,6 +9,13 @@ Please refer `README.cli` for referencing project setup details. Firebase seems 
 - [Perform simple and compound queries in Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/queries#array_membership)
 - add more urls here..
 
+# Update user details of a firebase user
+Source: [Stackoverflow answer](https://stackoverflow.com/questions/39607023/in-firebase-how-do-you-update-the-displayname-field-of-a-user-in-auth)
+
+**Amazing Methods in Firebase Docs**: [Firebase Reference Docs](https://firebase.google.com/docs/reference/js/v8/firebase.User)
+
+*Learn: Using method [updateProfile](https://firebase.google.com/docs/reference/js/v8/firebase.User#updateprofile) you can change the `displaName` of the user probably.*
+
 # decoding firestore database rules
 
 - You can make use this rule to define array's inside value driven authorization: yikes!! **Gonna use this to implement authorization in the chat app in totelApp by having array field `relatedTo` in `messages` collection and with each message I will store the user's uid and the target's uid in that array as values, thus:**
