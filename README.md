@@ -137,6 +137,7 @@ imageURL 96x96 :
 
 ## Code cheatsheet
 
+- To add extra information to a user in firebase: https://stackoverflow.com/questions/39076988/add-extra-user-information-with-firebase
 - `.add()` is equivalent to `.doc().set()` [source - comment on this answer](https://stackoverflow.com/a/48544954), which directs to [docs page here](https://firebase.google.com/docs/firestore/manage-data/add-data).
 - To create or overwrite a single document, use the set() method, src: https://firebase.google.com/docs/firestore/manage-data/add-data
 ```js
