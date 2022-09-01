@@ -144,6 +144,52 @@ imageURL 96x96 :
 
 ## Code cheatsheet
 
+- Using firebase service account on server for admnin access, below is an example of using `firebase-admin` to get emails list so we can send a simple `/api/user-exists` requests to check if a certain user exists in the current firestore db or not. Awesome isn't it?
+
+```js
+const firebase = require('firebase-admin')
+const serviceAccount = require('services/auth/firebase/for-next-auth-example-project-firebase-adminsdk-y74xa-8d5ab6b743.json')
+
+let firebaseApp
+
+if (!firebase.apps.length) {
+	firebaseApp = firebase.initializeApp({
+		credential: firebase.credential.cert(serviceAccount),
+		databaseURL: 'https://for-next-auth-example-project-default-rtdb.firebaseio.com',
+	})
+} else {
+	// idk if this returs firebaseApp or not,, ~Sahil
+	firebaseApp = firebase.app(); // if already initialized, use that one
+}
+
+// Only admin can retrieve all users BTW #1/2 https://stackoverflow.com/questions/46939765/retrieving-a-list-of-users-who-have-registered-using-firebase-auth, #2/2: https://stackoverflow.com/questions/56380107/typeerror-admin-listusers-is-not-a-function
+async function getAllUsers() {
+	const allUsers: any = []
+
+	const listAllUsers = async (nextPageToken?: string) => {
+		const res: any = await (firebase.auth() as any).listUsers(1000, nextPageToken)
+		allUsers.push(...res.users)
+		if (res.pageToken) {
+			await listAllUsers(res.pageToken)
+		}
+	}
+
+	await listAllUsers()
+
+	// console.log('allUsers?', allUsers)
+	return allUsers
+}
+
+export default async function allUserList(req, res) {
+	const users = await getAllUsers()
+	const emails = users.map(u => u.email)
+	// console.log({emails});
+	const userAlreadyExists = emails.includes(req.body.email)
+	// console.log({userAlreadyExists});
+	res.status(200).json(userAlreadyExists)
+}
+```
+
 - To add extra information to a user in firebase: https://stackoverflow.com/questions/39076988/add-extra-user-information-with-firebase
 - `.add()` is equivalent to `.doc().set()` [source - comment on this answer](https://stackoverflow.com/a/48544954), which directs to [docs page here](https://firebase.google.com/docs/firestore/manage-data/add-data).
 - To create or overwrite a single document, use the set() method, src: https://firebase.google.com/docs/firestore/manage-data/add-data
