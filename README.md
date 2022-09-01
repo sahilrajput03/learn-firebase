@@ -31,7 +31,7 @@ Please refer `README.cli` for referencing project setup details. Firebase seems 
 		firebaseApp = firebase.app(); // if already initialized, use that one
 	}
 
-	// Only admin can retrieve all users BTW #1/2 https://stackoverflow.com/questions/46939765/retrieving-a-list-of-users-who-have-registered-using-firebase-auth, #2/2: https://stackoverflow.com/questions/56380107/typeerror-admin-listusers-is-not-a-function
+	// Only admin can retrieve all users BTW, Stackoverlow source: #1/2 https://stackoverflow.com/questions/46939765/retrieving-a-list-of-users-who-have-registered-using-firebase-auth, #2/2: https://stackoverflow.com/questions/56380107/typeerror-admin-listusers-is-not-a-function
 	async function getAllUsers() {
 		const allUsers: any = []
 
