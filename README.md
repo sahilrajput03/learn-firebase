@@ -166,6 +166,8 @@ const snapshot: any = await usersCollection.where('email', '==', details.user.em
 if (snapshot.docs.length > 0) {
 	const users = snapshot.docs.map((t: any) => t.data())
 }
+
+// To create or overwrite a single document, use the set() method, src: https://firebase.google.com/docs/firestore/manage-data/add-data
 ```
 
 
