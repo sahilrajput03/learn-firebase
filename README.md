@@ -4,6 +4,13 @@ TODO: Official Unit Testing Guide | Firestore Tools: [Click here](https://fireba
 
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
+## Creating firebase service account to have an admin sdk (useful to handle admin operations on server)
+
+Source: [Click here](https://firebase.google.com/docs/admin/setup)
+
+![image](https://user-images.githubusercontent.com/31458531/187941130-88343e28-d6a0-4a04-b8bf-68b7f66d0ed9.png)
+
+
 # Firestore Fetching Data Docs
 
 - [Perform simple and compound queries in Cloud Firestore](https://firebase.google.com/docs/firestore/query-data/queries#array_membership)
