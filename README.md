@@ -135,6 +135,39 @@ imageURL 96x96 :
 
 ![image](https://user-images.githubusercontent.com/31458531/186396018-4ac4a80f-aa85-4179-8a28-1a9b3707bf19.png)
 
+## Code cheatsheet
+
+- `.add()` is equivalent to `.doc().set()` [source - comment on this answer](https://stackoverflow.com/a/48544954), which directs to [docs page here](https://firebase.google.com/docs/firestore/manage-data/add-data).
+
+```js
+import firebase from 'firebase/compat/app';
+const firebaseApp = firebase.initializeApp(firebaseConfig);
+const firestore = firebase.firestore();
+// collections
+export const usersCollection = firestore.collection('users');
+export const messagesCollection = firestore.collection('messages');
+
+// adding document
+await usersCollection.add({
+	email,
+	uid,
+	photoURL,
+});
+
+// adding document with custom id as "LA" , src: https://stackoverflow.com/questions/48541270/how-to-add-document-with-custom-id-to-firestore
+usersCollection.doc("LA").set({
+    name: "Los Angeles",
+    state: "CA",
+    country: "USA"
+})
+
+// querying documents
+const snapshot: any = await usersCollection.where('email', '==', details.user.email).get();
+if (snapshot.docs.length > 0) {
+	const users = snapshot.docs.map((t: any) => t.data())
+}
+```
+
 
 ## This is how we live update of the data from firestore
 
