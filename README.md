@@ -138,7 +138,7 @@ imageURL 96x96 :
 ## Code cheatsheet
 
 - `.add()` is equivalent to `.doc().set()` [source - comment on this answer](https://stackoverflow.com/a/48544954), which directs to [docs page here](https://firebase.google.com/docs/firestore/manage-data/add-data).
-
+- To create or overwrite a single document, use the set() method, src: https://firebase.google.com/docs/firestore/manage-data/add-data
 ```js
 import firebase from 'firebase/compat/app';
 const firebaseApp = firebase.initializeApp(firebaseConfig);
@@ -166,8 +166,6 @@ const snapshot: any = await usersCollection.where('email', '==', details.user.em
 if (snapshot.docs.length > 0) {
 	const users = snapshot.docs.map((t: any) => t.data())
 }
-
-// To create or overwrite a single document, use the set() method, src: https://firebase.google.com/docs/firestore/manage-data/add-data
 ```
 
 
