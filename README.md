@@ -239,6 +239,7 @@ await usersCollection.doc(uid).update({key: "value"); // merges to older proeprt
 Docs of `react-firebase-hooks` - firestore: **[Click here](https://github.com/CSFrequency/react-firebase-hooks/blob/master/firestore/README.md)**
 
 ```ts
+// Example: 1
 const App = () => {
 	const [user, loading, error] = useAuthState(auth)
 	const [formData, setFormData] = useState(initialFormData)
@@ -253,9 +254,9 @@ const App = () => {
 	}, [snapshot])
 }
 
-
-
 /////
+
+// Example: 2
 const messagesCollectionData: any = [messagesCollection.orderBy('createdAt').limit(5_000), {idField: 'id'}]
 const usersCollectionData: any = [usersCollection.orderBy('createdAt').limit(1_000), {idField: 'id'}]
 
