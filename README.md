@@ -234,6 +234,33 @@ usersCollection.doc("LA").set({
 await usersCollection.doc(uid).update({key: "value"); // merges to older proeprties but overwrites if property already exists
 ```
 
+# cheatsheet react-firebase-hooks
+
+Docs of `react-firebase-hooks` - firestore: **[Click here](https://github.com/CSFrequency/react-firebase-hooks/blob/master/firestore/README.md)**
+
+```ts
+const [user, loading, error] = useAuthState(auth)
+const [formData, setFormData] = useState(initialFormData)
+
+const [snapshot, loadingDocument, errorDocument] = useDocument(usersCollection.doc(user.uid))
+
+useEffect(() => {
+	if (snapshot) {
+		console.log('snapshot.date():', snapshot.data())
+		setFormData(snapshot.data())
+	}
+}, [snapshot])
+
+
+
+/////
+const messagesCollectionData: any = [messagesCollection.orderBy('createdAt').limit(5_000), {idField: 'id'}]
+const usersCollectionData: any = [usersCollection.orderBy('createdAt').limit(1_000), {idField: 'id'}]
+
+const [messagesFromFirestore]: any = useCollectionData(...messagesCollectionData)
+const [usersFromFirestore] = useCollectionData(...usersCollectionData)
+```
+
 
 ## This is how we live update of the data from firestore
 
