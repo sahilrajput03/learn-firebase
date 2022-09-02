@@ -239,7 +239,7 @@ await usersCollection.doc(uid).update({key: "value"); // merges to older proeprt
 Docs of `react-firebase-hooks` - firestore: **[Click here](https://github.com/CSFrequency/react-firebase-hooks/blob/master/firestore/README.md)**
 
 ```ts
-// Example: 1
+// Example: 1 (source: https://stackoverflow.com/a/58867295 )
 const App = () => {
 	const [user, loading, error] = useAuthState(auth)
 	const [formData, setFormData] = useState(initialFormData)
