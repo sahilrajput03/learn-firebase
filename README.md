@@ -211,6 +211,12 @@ await usersCollection.add({
 	photoURL,
 });
 
+// querying documents
+const snapshot: any = await usersCollection.where('email', '==', details.user.email).get();
+if (snapshot.docs.length > 0) {
+	const users = snapshot.docs.map((t: any) => t.data())
+}
+
 // adding document with custom id as "LA" , src: https://stackoverflow.com/questions/48541270/how-to-add-document-with-custom-id-to-firestore
 usersCollection.doc("LA").set({
     name: "Los Angeles",
@@ -218,11 +224,8 @@ usersCollection.doc("LA").set({
     country: "USA"
 })
 
-// querying documents
-const snapshot: any = await usersCollection.where('email', '==', details.user.email).get();
-if (snapshot.docs.length > 0) {
-	const users = snapshot.docs.map((t: any) => t.data())
-}
+// updating a document having document id : `uid`
+await usersCollection.doc(uid).update({key: "value"); // merges to older proeprties but overwrites if property already exists
 ```
 
 
