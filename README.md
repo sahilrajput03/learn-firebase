@@ -217,6 +217,12 @@ if (snapshot.docs.length > 0) {
 	const users = snapshot.docs.map((t: any) => t.data())
 }
 
+// query document by document id
+const snapshot = await usersCollection.doc(uid).get()
+
+// querying using orderby
+const snapshot = await usersCollection.orderBy('createdAt').limit(1_000).get()
+
 // adding document with custom id as "LA" , src: https://stackoverflow.com/questions/48541270/how-to-add-document-with-custom-id-to-firestore
 usersCollection.doc("LA").set({
     name: "Los Angeles",
@@ -226,9 +232,6 @@ usersCollection.doc("LA").set({
 
 // updating a document having document id : `uid`
 await usersCollection.doc(uid).update({key: "value"); // merges to older proeprties but overwrites if property already exists
-
-// querying using orderby
-const snapshot = await usersCollection.orderBy('createdAt').limit(1_000).get()
 ```
 
 
