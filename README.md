@@ -226,6 +226,9 @@ usersCollection.doc("LA").set({
 
 // updating a document having document id : `uid`
 await usersCollection.doc(uid).update({key: "value"); // merges to older proeprties but overwrites if property already exists
+
+// querying using orderby
+const snapshot = await usersCollection.orderBy('createdAt').limit(1_000).get()
 ```
 
 
