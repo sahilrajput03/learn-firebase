@@ -239,17 +239,19 @@ await usersCollection.doc(uid).update({key: "value"); // merges to older proeprt
 Docs of `react-firebase-hooks` - firestore: **[Click here](https://github.com/CSFrequency/react-firebase-hooks/blob/master/firestore/README.md)**
 
 ```ts
-const [user, loading, error] = useAuthState(auth)
-const [formData, setFormData] = useState(initialFormData)
+const App = () => {
+	const [user, loading, error] = useAuthState(auth)
+	const [formData, setFormData] = useState(initialFormData)
 
-const [snapshot, loadingDocument, errorDocument] = useDocument(usersCollection.doc(user.uid))
+	const [snapshot, loadingDocument, errorDocument] = useDocument(usersCollection.doc(user.uid))
 
-useEffect(() => {
-	if (snapshot) {
-		console.log('snapshot.date():', snapshot.data())
-		setFormData(snapshot.data())
-	}
-}, [snapshot])
+	useEffect(() => {
+		if (snapshot) {
+			console.log('snapshot.date():', snapshot.data())
+			setFormData(snapshot.data())
+		}
+	}, [snapshot])
+}
 
 
 
@@ -257,8 +259,11 @@ useEffect(() => {
 const messagesCollectionData: any = [messagesCollection.orderBy('createdAt').limit(5_000), {idField: 'id'}]
 const usersCollectionData: any = [usersCollection.orderBy('createdAt').limit(1_000), {idField: 'id'}]
 
-const [messagesFromFirestore]: any = useCollectionData(...messagesCollectionData)
-const [usersFromFirestore] = useCollectionData(...usersCollectionData)
+const App = () => {
+	const [messagesFromFirestore]: any = useCollectionData(...messagesCollectionData)
+	const [usersFromFirestore] = useCollectionData(...usersCollectionData)
+}
+
 ```
 
 
