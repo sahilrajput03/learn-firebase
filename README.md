@@ -4,6 +4,10 @@ TODO: Official Unit Testing Guide | Firestore Tools: [Click here](https://fireba
 
 Please refer `README.cli` for referencing project setup details. Firebase seems awesome though.
 
+## Thats how you can upload and get urls of any file with firebase storage
+
+![image](https://user-images.githubusercontent.com/31458531/188701663-1863348f-3ea5-4f27-a1e1-d9dee899199d.png)
+
 ## Creating firebase service account to have an admin sdk (useful to handle admin operations on server)
 
    Source: [Click here](https://firebase.google.com/docs/admin/setup)
